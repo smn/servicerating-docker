@@ -132,7 +132,7 @@ describe("app", function() {
                     .check.interaction({
                         state: 'end_thanks',
                         reply: [
-                            'Thank you for rating our service.'
+                            'Thank you! Rating our service helps us improve it.'
                         ].join('\n')
                     })
                     .check.reply.ends_session()

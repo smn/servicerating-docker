@@ -112,7 +112,9 @@ go.app = function() {
 
         self.states.add('end_thanks', function(name) {
             return new EndState(name, {
-                text: $('Thank you for rating our service.'),
+                text: $('Thank you{{user_name}}! Rating our service helps us improve it.').context({
+                    'user_name': (self.user_name === '' ? '' : ' ' + self.user_name)
+                }),
                 next: 'states_start'
             });
         });
