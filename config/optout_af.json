@@ -1,0 +1,107 @@
+{
+    "": {
+        "project-id-version": "opt_out",
+        "pot-creation-date": "2014-08-20 10:49:+0000",
+        "po-revision-date": "2014-08-26 10:19-0000",
+        "last-translator": "Lieze <lieze@praekelt.com>",
+        "language-team": "Language <LL@li.org>",
+        "language": "af_ZA",
+        "mime-version": "1.0",
+        "content-type": "text/plain; charset=UTF-8",
+        "content-transfer-encoding": "8bit",
+        "x-generator": "Poedit 1.6.8",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+    },
+    "Jan": [
+        null,
+        "Jan"
+    ],
+    "Feb": [
+        null,
+        "Feb"
+    ],
+    "Mar": [
+        null,
+        "Maart"
+    ],
+    "Apr": [
+        null,
+        "Apr"
+    ],
+    "May": [
+        null,
+        "Mei"
+    ],
+    "Jun": [
+        null,
+        "Junie"
+    ],
+    "Jul": [
+        null,
+        "Julie"
+    ],
+    "Aug": [
+        null,
+        "Aug"
+    ],
+    "Sep": [
+        null,
+        "Sep"
+    ],
+    "Oct": [
+        null,
+        "Okt"
+    ],
+    "Nov": [
+        null,
+        "Nov"
+    ],
+    "Dec": [
+        null,
+        "Des"
+    ],
+    "Please let us know why you do not want MomConnect messages": [
+        null,
+        "Laat weet ons asb hoekom jy nie meer MomConnect SMSe wil kry nie"
+    ],
+    "Miscarriage": [
+        null,
+        "Miskraam"
+    ],
+    "Baby was stillborn": [
+        null,
+        "Baba doodgebore"
+    ],
+    "Baby died": [
+        null,
+        "Baba dood"
+    ],
+    "Messages not useful": [
+        null,
+        "SMSe nie nuttig"
+    ],
+    "Other": [
+        null,
+        "Ander"
+    ],
+    "We are sorry for your loss. Would you like to receive a small set of free messages to help you in this difficult time?": [
+        null,
+        "Jammer oor jou verlies. Wil jy ’n paar gratis SMSe kry om jou te help in hierdie swaar tyd?"
+    ],
+    "Yes": [
+        null,
+        "Ja"
+    ],
+    "No": [
+        null,
+        "Nee"
+    ],
+    "Thank you. You will no longer receive messages from us. If you have any medical concerns please visit your nearest clinic.": [
+        null,
+        "Dankie. Jy sal nie meer boodskappe van ons kry nie. As jy ander mediese kwellings het gaan asb na jou naaste kliniek."
+    ],
+    "Thank you. You will receive support messages from MomConnect in the coming weeks.": [
+        null,
+        "Dankie. Jy sal boodskappe kry van MomConnect in die nabye toekoms."
+    ]
+}

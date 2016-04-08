@@ -1,0 +1,380 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: public\n"
+"POT-Creation-Date: 2014-08-20 10:49:+0000\n"
+"PO-Revision-Date: 2014-08-26 10:51-0000\n"
+"Last-Translator: Lieze <lieze@praekelt.com>\n"
+"Language-Team: Language <LL@li.org>\n"
+"Language: xh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: go-app-personal.js:27
+msgid "Jan"
+msgstr "Jan"
+
+#: go-app-personal.js:28
+msgid "Feb"
+msgstr "Feb"
+
+#: go-app-personal.js:29
+msgid "Mar"
+msgstr "Mar"
+
+#: go-app-personal.js:30
+msgid "Apr"
+msgstr "Apri"
+
+#: go-app-personal.js:31
+msgid "May"
+msgstr "May"
+
+#: go-app-personal.js:32
+msgid "Jun"
+msgstr "Juni"
+
+#: go-app-personal.js:33
+msgid "Jul"
+msgstr "Julayi"
+
+#: go-app-personal.js:34
+msgid "Aug"
+msgstr "Agasti"
+
+#: go-app-personal.js:35
+msgid "Sep"
+msgstr "Sep"
+
+#: go-app-personal.js:36
+msgid "Oct"
+msgstr "Okt"
+
+#: go-app-personal.js:37
+msgid "Nov"
+msgstr "Nov"
+
+#: go-app-personal.js:38
+msgid "Dec"
+msgstr "Dis"
+
+#: go-app-personal.js:1097
+msgid ""
+"Your session timed out. Please dial back in to {{USSD_number}} to complete "
+"the pregnancy registration so that you can receive messages."
+msgstr ""
+"Iseshoni yakho iphelelwe lixesha. Nceda utsalele apha {{USSD_number}} "
+"ukubuya ugqibe ukufaka idata yakho ukuze ufumane imiyalezo."
+
+#: go-app-personal.js:1182
+#, fuzzy
+msgid "Welcome back. Please select an option:"
+msgstr "Please select one:"
+
+#: go-app-personal.js:1185
+#, fuzzy
+msgid "Continue signing up for messages"
+msgstr "Bhalisa imiyalezo"
+
+#: go-app-personal.js:1186
+msgid "Main menu"
+msgstr "Imenyu enguNdoqo"
+
+#: go-app-personal.js:1200
+msgid ""
+"Welcome to the Department of Health's MomConnect. Please choose an option:"
+msgstr "Wamkelekile kwiMomConnect yeSebe lezeMpilo. Yenza ukhetho:"
+
+#: go-app-personal.js:1204
+msgid "Baby and pregnancy info"
+msgstr "Ulwazi ngoSana nokuKhulelwa (isiNgesi kuphela)"
+
+#: go-app-personal.js:1205
+msgid "Send us a compliment"
+msgstr "Sithumelele isincomo"
+
+#: go-app-personal.js:1206
+msgid "Send us a complaint"
+msgstr "Faka isikhalazo"
+
+#: go-app-personal.js:1221
+msgid ""
+"Thank you. We will send you a message shortly with instructions on how to "
+"send us your compliment."
+msgstr ""
+"Enkosi. Siza kukuthumelela umyalezo kungekudala nemiyalelo yendlela yokus "
+"isikhalazo sakho."
+
+#: go-app-personal.js:1231
+msgid ""
+"Please reply to this message with your compliment. If it relates to the "
+"service at the clinic, include the clinic or clinic worker name. Standard "
+"rates apply."
+msgstr ""
+"Phendula kulo myalezo noko ukuncomayo. Ukuba simalunga nesevisi eklinikhi, "
+"yifake okanye igama lomsebenzi waseklinikhi. Ubhatala ngokuqhelekileyo."
+
+#: go-app-personal.js:1240
+msgid ""
+"Thank you. We will send you a message shortly with instructions on how to "
+"send us your complaint."
+msgstr ""
+"Enkosi. Siza kukuthumelela umyalezo kungekudala nemiyalelo yendlela "
+"yokusithumelela isincomo sakho."
+
+#: go-app-personal.js:1249
+msgid ""
+"Please reply to this message with your complaint. If it relates to the "
+"service at the clinic, include the clinic or clinic worker name. Standard "
+"rates apply."
+msgstr ""
+"Phendula kulo myalezo nesikhalazo sakho. Ukuba simalunga nesevisi "
+"eklinikhi, yifake okanye igama lomsebenzi waseklinikhi. Ubhatala "
+"ngokuqhelekileyo."
+
+#: go-app-personal.js:1260
+msgid "Welcome to the Department of Health's MomConnect. Choose an option:"
+msgstr "Wamkelekile kwiMomConnect yeSebe lezeMpilo. Yenza ukhetho:"
+
+#: go-app-personal.js:1264
+msgid "Baby and pregnancy info (English only)"
+msgstr "Ulwazi ngoSana nokuKhulelwa (isiNgesi kuphela)"
+
+#: go-app-personal.js:1265
+msgid "Get the full set of messages"
+msgstr "Fumana iseti epheleleyo yemiyalezo"
+
+#: go-app-personal.js:1279
+msgid ""
+"To register for the full set of MomConnect messages, please visit your "
+"nearest clinic."
+msgstr ""
+"Ukubhalisela iseti epheleleyo yemiyalezo yeMomConnect, nceda utyelele "
+"ikliniki yakho ekufuphi."
+
+#: go-app-personal.js:1289
+msgid "Welcome to the Department of Health's MomConnect. Choose your language:"
+msgstr ""
+"Welcome to the Department of Health's MomConnect. Choose your language:"
+
+#: go-app-personal.js:1292
+msgid "English"
+msgstr "English"
+
+#: go-app-personal.js:1293
+msgid "Afrikaans"
+msgstr "Afrikaans "
+
+#: go-app-personal.js:1294
+msgid "Zulu"
+msgstr "Zulu"
+
+#: go-app-personal.js:1295
+msgid "Xhosa"
+msgstr "Xhosa"
+
+#: go-app-personal.js:1296
+msgid "Sotho"
+msgstr "Sotho"
+
+#: go-app-personal.js:1297
+msgid "Setswana"
+msgstr "Tswana"
+
+#: go-app-personal.js:1332
+msgid "Welcome to the Department of Health's MomConnect. Please select:"
+msgstr "Wamkelekile kwiMomConnect yeSebe lezeMpilo. Nceda ukhethe:"
+
+#: go-app-personal.js:1336
+msgid "Register for messages"
+msgstr "Bhalisa imiyalezo"
+
+#: go-app-personal.js:1337
+msgid "Baby and Pregnancy info (English only)"
+msgstr "Ulwazi ngoSana nokuKhulelwa (isiNgesi kuphela)"
+
+#: go-app-personal.js:1352
+msgid ""
+"MomConnect sends free support SMSs to pregnant mothers. Are you or do you "
+"suspect that you are pregnant?"
+msgstr ""
+"I-MomConnect ithumela simahla ii-SMS zenkxaso koomama abakhulelweyo. Ingaba "
+"ukhulelwe okanye urhanela ukuba ukhulelwe?"
+
+#: go-app-personal.js:1357 go-app-personal.js:1391
+msgid "Yes"
+msgstr "Ewe"
+
+#: go-app-personal.js:1358 go-app-personal.js:1392
+msgid "No"
+msgstr "Hayi"
+
+#: go-app-personal.js:1386
+msgid ""
+"You have previously opted out of MomConnect SMSs. Please confirm that you "
+"would like to opt in to receive messages again?"
+msgstr ""
+"Kwixa elingaphambili ukhethe ukuphuma kwii-SMS ze-MomConnect. Nceda ungqine "
+"ukuba ungathanda ukukhetha ukwamkela imiyalezo kwakhona."
+
+#: go-app-personal.js:1411
+msgid ""
+"You have chosen not to receive MomConnect SMSs and so cannot complete "
+"registration."
+msgstr ""
+"Ukhethe ukungafumani ii-SMS ze-MomConnect yaye ngako awunakho ukugqiba "
+"ubhaliso."
+
+#: go-app-personal.js:1415
+msgid "Main Menu"
+msgstr "Imenyu enguNdoqo"
+
+#: go-app-personal.js:1427
+msgid ""
+"We are sorry but this service is only for pregnant mothers. If you have "
+"other health concerns please visit your nearest clinic."
+msgstr ""
+"Sicela uxolo kodwa le nkonzo yeyoomama abakhulelweyo bodwa. Ukuba unezinye "
+"iinkxalabo ngempilo nceda utyelele ikliniki yakho ekufuphi."
+
+#: go-app-personal.js:1436
+msgid ""
+"We need some info to message you. This is private and will only be used to "
+"help you at a clinic. What kind of ID do you have?"
+msgstr ""
+"Sifuna ulwazi oluthile ukuthumela imiyalezo.Oku kubucala yaye kuya "
+"kusetyenziswa kuphela ukukunceda xa uya ekliniki."
+
+#: go-app-personal.js:1441
+msgid "SA ID"
+msgstr "ID yaseRSA"
+
+#: go-app-personal.js:1442
+msgid "Passport"
+msgstr "Ipasipoti"
+
+#: go-app-personal.js:1443
+msgid "None"
+msgstr "Akukho nanye"
+
+#: go-app-personal.js:1463
+msgid ""
+"Sorry, your ID number did not validate. Please reenter your SA ID number:"
+msgstr ""
+"Uxolo, inombolo yakho yeID ayiqinisekiswanga. Nceda ufake kwakhona inomboli "
+"yeID yaseSA:"
+
+#: go-app-personal.js:1466
+msgid "Please enter your SA ID number:"
+msgstr "Nceda ufake inombolo ye-ID yakho yaseMzantsi Afrika."
+
+#: go-app-personal.js:1499
+msgid "What is the country of origin of the passport?"
+msgstr "Leliphi ilizwe lentsusa lepasipoti? "
+
+#: go-app-personal.js:1502
+msgid "Zimbabwe"
+msgstr "iZimbabwe"
+
+#: go-app-personal.js:1503
+msgid "Mozambique"
+msgstr "iMozambique"
+
+#: go-app-personal.js:1504
+msgid "Malawi"
+msgstr "iMalawi"
+
+#: go-app-personal.js:1505
+msgid "Nigeria"
+msgstr "iNigeria"
+
+#: go-app-personal.js:1506
+msgid "DRC"
+msgstr "iDRC"
+
+#: go-app-personal.js:1507
+msgid "Somalia"
+msgstr "iSomalia"
+
+#: go-app-personal.js:1508
+msgid "Other"
+msgstr "Elinye"
+
+#: go-app-personal.js:1526
+msgid ""
+"There was an error in your entry. Please carefully enter your passport "
+"number again."
+msgstr ""
+"Kubekho isiphosiso kungenelo lwakho. Nceda ufake inombolo yakho yePasipoti."
+
+#: go-app-personal.js:1528
+msgid "Please enter your Passport number:"
+msgstr "Nceda ufake inombolo yakho yePasipoti."
+
+#: go-app-personal.js:1554
+msgid ""
+"There was an error in your entry. Please carefully enter your year of birth "
+"again (for example: 2001)"
+msgstr ""
+"Kubekho isiphosiso kungenelo lwakho. Nceda faka ngobunono unyaka wakho "
+"wokuzalwa kwakhona (umzekelo: 2001)"
+
+#: go-app-personal.js:1558
+msgid ""
+"Since you don't have an ID or passport, please enter the year that you were "
+"born (for example: 1981)"
+msgstr ""
+"Njengoko ungenayo i-ID okanye ipasipoti, nceda ufake unyaka owazalwa ngawo "
+"(Umzekelo 1981)"
+
+#: go-app-personal.js:1587
+msgid "Please enter the month that you were born."
+msgstr "Nceda ufake inyanga owazalwa ngayo"
+
+#: go-app-personal.js:1606
+msgid ""
+"There was an error in your entry. Please carefully enter your day of birth "
+"again (for example: 8)"
+msgstr ""
+"Kubekho isiphosiso kungenelo lwakho. Nceda ufake ngobunono usuku lwakho "
+"lokuzalwa kwakhona (umzekelo: 8)"
+
+#: go-app-personal.js:1610
+msgid "Please enter the day that you were born (for example: 14)."
+msgstr "Nceda ufake umhla owazalwa ngawo (Umzekelo 14)"
+
+#: go-app-personal.js:1662 go-app-personal.js:1676
+msgid ""
+"Congratulations on your pregnancy. You will now get free SMSs about "
+"MomConnect. You can register for the full set of FREE helpful messages at a "
+"clinic."
+msgstr ""
+"Sivuyisana nawe ngokukhulelwa kwakho. Ngoku uza kufumana ii-SMS zasimahla "
+"kwa-MomConnect. Ungabhalisela iseti epheleleyo yaSIMAHLA yemiyalezo eluncedo "
+"ekliniki."
+
+#: go-app-personal.js:1712
+msgid "We have gathered information in the areas below. Please select:"
+msgstr "We have gathered information in the areas below. Please select:"
+
+#: go-app-personal.js:1734
+msgid "Please select one:"
+msgstr "Please select one:"
+
+#: go-app-personal.js:1759
+msgid "More"
+msgstr ""
+
+#: go-app-personal.js:1760
+msgid "Back"
+msgstr ""
+
+#: go-app-personal.js:1761
+msgid "Send to me by SMS"
+msgstr ""
+
+#: go-app-personal.js:1776
+msgid "Thank you. Your SMS will be delivered shortly."
+msgstr "Enkosi. I-SMS iza kuthunyelwa kungekudala."

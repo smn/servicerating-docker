@@ -1,0 +1,71 @@
+{
+    "name": "smsinbound_qa",
+    "env": "qa",
+    "metric_store": "ndoh_qa",
+    "endpoints": {"sms": {"delivery_class": "sms"}},
+    "channel": "longcode",
+    "jembi": {
+        "username": "test",
+        "password": "test",
+        "url": "http://188.226.141.131:5001/ws/rest/v1/registration/net.ihe/DocumentDossier",
+        "url_json": "http://188.226.141.131:5001/ws/rest/v1/subscription"
+    },
+    "control": {
+        "username": "test_user",
+        "api_key": "test_key",
+        "url": "http://qa-ndoh-control.za.prk-host.net/api/v1/"
+    },
+    "subscription": {
+        "standard": 1,
+        "later": 2,
+        "accelerated": 3,
+        "baby1": 4,
+        "baby2": 5,
+        "miscarriage": 6,
+        "stillbirth": 7,
+        "babyloss": 8,
+        "subscription": 9,
+        "chw": 10
+    },
+    "rate": {
+        "daily": 1,
+        "one_per_week": 2,
+        "two_per_week": 3,
+        "three_per_week": 4,
+        "four_per_week": 5,
+        "five_per_week": 6
+    },
+    "snappybouncer": {
+        "conversation": "7b01fe79bf5b4517a0658b81305f2033"
+    },
+    "public_holidays": [
+        "2015-01-01",
+        "2015-03-21",
+        "2015-04-03",
+        "2015-04-06",
+        "2015-04-27",
+        "2015-05-01",
+        "2015-06-16",
+        "2015-08-09",
+        "2015-08-10",
+        "2015-09-24",
+        "2015-12-16",
+        "2015-12-25",
+        "2015-12-26",
+
+        "2016-01-01",
+        "2016-03-21",
+        "2016-03-25",
+        "2016-03-28",
+        "2016-04-27",
+        "2016-05-01",
+        "2016-05-02",
+        "2016-06-16",
+        "2016-08-09",
+        "2016-09-24",
+        "2016-12-16",
+        "2016-12-25",
+        "2016-12-26"
+    ],
+    "helpdesk_hours": [8, 16]
+}
