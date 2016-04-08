@@ -16,14 +16,6 @@ go.app = function() {
         App.call(self, 'states_start');
         var $ = self.$;
 
-        self.init = function() {
-            return self.im.contacts
-                .for_user()
-                .then(function(user_contact) {
-                   self.contact = user_contact;
-                });
-        };
-
         self.states.add('states_start', function(name) {
             return self.states.create('question_1_friendliness');
         });
