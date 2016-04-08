@@ -16,13 +16,27 @@ go.app = function() {
         App.call(self, 'states_start');
         var $ = self.$;
 
+        self.init = function() {
+            console.log(self.im.msg);
+            self.user_profile = self.im.msg.helper_metadata.messenger || {};
+            if(self.user_profile.first_name) {
+                self.user_name = (
+                    self.user_profile.first_name +
+                    self.user_profile.last_name);
+            } else {
+                self.user_name = '';
+            }
+        };
+
         self.states.add('states_start', function(name) {
             return self.states.create('question_1_friendliness');
         });
 
         self.states.add('question_1_friendliness', function(name) {
             return new ChoiceState(name, {
-                question: $('Welcome. When you signed up, were staff at the facility friendly & helpful?'),
+                question: $('Welcome{{user_name}}. When you signed up, were staff at the facility friendly & helpful?').context({
+                    'user_name': (self.user_name === '' ? '' : ' ' + self.user_name)
+                }),
 
                 choices: [
                     new Choice('very-satisfied', $('Very Satisfied')),
