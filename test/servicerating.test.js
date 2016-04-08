@@ -11,7 +11,7 @@ describe("app", function() {
         var tester;
 
         beforeEach(function() {
-            app = new go.app.GoNDOH();
+            app = new go.app.JsBoxApp();
             go.utils.get_timestamp = function() {
                 return '20130819144811';
             };

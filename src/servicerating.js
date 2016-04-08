@@ -7,7 +7,7 @@ go.app = function() {
     var ChoiceState = vumigo.states.ChoiceState;
     var EndState = vumigo.states.EndState;
 
-    var GoNDOH = App.extend(function(self) {
+    var JsBoxApp = App.extend(function(self) {
         App.call(self, 'states_start');
         var $ = self.$;
 
@@ -213,6 +213,6 @@ go.app = function() {
     });
 
     return {
-        GoNDOH: GoNDOH
+        JsBoxApp: JsBoxApp
     };
 }();

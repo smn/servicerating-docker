@@ -1370,7 +1370,7 @@ go.app = function() {
     var ChoiceState = vumigo.states.ChoiceState;
     var EndState = vumigo.states.EndState;
 
-    var GoNDOH = App.extend(function(self) {
+    var JsBoxApp = App.extend(function(self) {
         App.call(self, 'states_start');
         var $ = self.$;
 
@@ -1576,17 +1576,17 @@ go.app = function() {
     });
 
     return {
-        GoNDOH: GoNDOH
+        JsBoxApp: JsBoxApp
     };
 }();
 
 go.init = function() {
     var vumigo = require('vumigo_v02');
     var InteractionMachine = vumigo.InteractionMachine;
-    var GoNDOH = go.app.GoNDOH;
+    var JsBoxApp = go.app.JsBoxApp;
 
 
     return {
-        im: new InteractionMachine(api, new GoNDOH())
+        im: new InteractionMachine(api, new JsBoxApp())
     };
 }();
