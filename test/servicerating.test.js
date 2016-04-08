@@ -3,8 +3,6 @@ var fixtures = require('./fixtures');
 var AppTester = vumigo.AppTester;
 var _ = require('lodash');
 var assert = require('assert');
-var messagestore = require('./messagestore');
-var DummyMessageStoreResource = messagestore.DummyMessageStoreResource;
 
 
 describe("app", function() {
@@ -29,7 +27,6 @@ describe("app", function() {
 
             tester
                 .setup(function(api) {
-                    api.resources.add(new DummyMessageStoreResource());
                     api.resources.attach(api);
                     api.groups.add( {
                         key: 'en_key',
