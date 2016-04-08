@@ -15,7 +15,6 @@ module.exports = function (grunt) {
                 servicerating: [
                     'src/index.js',
                     'src/utils.js',
-                    'src/session_length_helper.js',
                     '<%= paths.src.app.servicerating %>',
                     'src/init.js'
                 ],
@@ -30,13 +29,8 @@ module.exports = function (grunt) {
                 servicerating: [
                     'test/setup.js',
                     'src/utils.js',
-                    'src/session_length_helper.js',
                     '<%= paths.src.app.servicerating %>',
                     'test/servicerating.test.js'
-                ],
-                session_length_helper: [
-                    'src/session_length_helper.js',
-                    'test/session_length_helper.test.js',
                 ],
             }
         },
@@ -70,9 +64,6 @@ module.exports = function (grunt) {
             test_servicerating: {
                 src: ['<%= paths.test.servicerating %>']
             },
-            test_session_length_helper: {
-                src: ['<%= paths.test.session_length_helper %>']
-            }
         }
     });
 
