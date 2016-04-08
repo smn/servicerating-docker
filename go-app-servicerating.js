@@ -6,11 +6,40 @@ go.utils = {
 
 go.app = function() {
     var vumigo = require('vumigo_v02');
-    // var MetricsHelper = require('go-jsbox-metrics-helper');
     var App = vumigo.App;
     var Choice = vumigo.states.Choice;
     var ChoiceState = vumigo.states.ChoiceState;
     var EndState = vumigo.states.EndState;
+    var _ = require('lodash');
+
+    var MessengerChoiceState = ChoiceState.extend(function(self, name, opts) {
+        /*
+        Automatically add the necessary helper metadata for
+        ChoiceStates when using the Messenger transport
+        */
+
+        opts = _.defaults(opts || {}, {});
+        opts.helper_metadata = function () {
+            return {
+                messenger: {
+                    template_type: 'button',
+                    text: opts.question,
+                    buttons: opts.choices.map(function(choice) {
+                        return {
+                            title: choice.label,
+                            payload: {
+                                content: choice.value,
+                                in_reply_to: self.im.msg.message_id || null,
+                            }
+                        };
+                    })
+                }
+            };
+        };
+
+        ChoiceState.call(self, name, opts);
+
+    });
 
     var JsBoxApp = App.extend(function(self) {
         App.call(self, 'states_start');
@@ -32,7 +61,7 @@ go.app = function() {
         });
 
         self.states.add('question_1_friendliness', function(name) {
-            return new ChoiceState(name, {
+            return new MessengerChoiceState(name, {
                 question: $('Welcome{{user_name}}. When you signed up, were staff at the facility friendly & helpful?').context({
                     'user_name': (self.user_name === '' ? '' : ' ' + self.user_name)
                 }),
@@ -49,7 +78,7 @@ go.app = function() {
         });
 
         self.states.add('question_2_waiting_times_feel', function(name) {
-            return new ChoiceState(name, {
+            return new MessengerChoiceState(name, {
                 question: $('How do you feel about the time you had to wait at the facility?'),
 
                 choices: [
@@ -64,7 +93,7 @@ go.app = function() {
         });
 
         self.states.add('question_3_waiting_times_length', function(name) {
-            return new ChoiceState(name, {
+            return new MessengerChoiceState(name, {
                 question: $('How long did you wait to be helped at the clinic?'),
 
                 choices: [
@@ -79,7 +108,7 @@ go.app = function() {
         });
 
         self.states.add('question_4_cleanliness', function(name) {
-            return new ChoiceState(name, {
+            return new MessengerChoiceState(name, {
                 question: $('Was the facility clean?'),
 
                 choices: [
@@ -94,7 +123,7 @@ go.app = function() {
         });
 
         self.states.add('question_5_privacy', function(name) {
-            return new ChoiceState(name, {
+            return new MessengerChoiceState(name, {
                 question: $('Did you feel that your privacy was respected by the staff?'),
 
                 choices: [

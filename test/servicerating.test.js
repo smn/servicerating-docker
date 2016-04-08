@@ -38,6 +38,12 @@ describe("app", function() {
                     .setup.char_limit(160)  // limit first state chars
                     .setup.user.addr('27001')
                     .inputs({session_event: 'new'})
+                    .check.reply(function (reply) {
+                        assert.ok(reply.helper_metadata.messenger);
+                        assert.equal(
+                            reply.helper_metadata.messenger.template_type,
+                            'button');
+                    })
                     .check.interaction({
                         state: 'question_1_friendliness',
                         reply: [
@@ -129,6 +135,9 @@ describe("app", function() {
             it("should thank and end", function() {
                 return tester
                     .inputs({session_event: 'new'}, '1', '1', '1', '1', '1')
+                    .check.reply(function (reply) {
+                        assert.equal(reply.helper_metadata, null);
+                    })
                     .check.interaction({
                         state: 'end_thanks',
                         reply: [
