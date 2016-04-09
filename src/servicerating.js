@@ -42,9 +42,6 @@ go.app = function() {
         var $ = self.$;
 
         self.init = function() {
-            // Currently just assume English.
-            self.im.user.set_lang('en');
-
             // See if there's a user profile
             self.user_profile = go.utils.get_user_profile(self.im.msg);
         };
