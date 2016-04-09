@@ -11,19 +11,20 @@ describe("app", function() {
         var tester;
 
         beforeEach(function() {
+
+            go.utils.get_user_profile = function (msg) {
+                return {
+                    first_name: 'Name',
+                    last_name: 'Surname',
+                    profile_pic: 'https://example.org/pic.png',
+                }
+            }
+
             app = new go.app.JsBoxApp();
 
             tester = new AppTester(app);
-
             tester
-                .setup(function(api) {
-                    api.resources.attach(api);
-                    api.groups.add( {
-                        key: 'en_key',
-                        name: 'en',
-                    });
-                })
-                .setup.char_limit(182)
+                .setup.char_limit(320)
                 .setup.config.app({
                     name: 'servicerating',
                 })
@@ -43,11 +44,16 @@ describe("app", function() {
                         assert.equal(
                             reply.helper_metadata.messenger.template_type,
                             'button');
+                        // Test that the translation is working
+                        assert.equal(
+                            reply.helper_metadata.messenger.text,
+                            'Welcome Name. When you signed up, were staff at the facility friendly & helpful?'
+                        );
                     })
                     .check.interaction({
                         state: 'question_1_friendliness',
                         reply: [
-                            'Welcome. When you signed up, were staff at the facility friendly & helpful?',
+                            'Welcome Name. When you signed up, were staff at the facility friendly & helpful?',
                             '1. Very Satisfied',
                             '2. Satisfied',
                             '3. Not Satisfied',
@@ -141,7 +147,7 @@ describe("app", function() {
                     .check.interaction({
                         state: 'end_thanks',
                         reply: [
-                            'Thank you! Rating our service helps us improve it.'
+                            'Thank you Name! Rating our service helps us improve it.'
                         ].join('\n')
                     })
                     .check.reply.ends_session()

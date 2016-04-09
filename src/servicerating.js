@@ -14,15 +14,16 @@ go.app = function() {
 
         opts = _.defaults(opts || {}, {});
         opts.helper_metadata = function () {
+            var i18n = self.im.user.i18n;
             return {
                 messenger: {
                     template_type: 'button',
-                    text: opts.question,
+                    text: i18n(opts.question),
                     buttons: opts.choices.map(function(choice) {
                         return {
-                            title: choice.label,
+                            title: i18n(choice.label),
                             payload: {
-                                content: choice.value,
+                                content: i18n(choice.value),
                                 in_reply_to: self.im.msg.message_id || null,
                             }
                         };
@@ -40,14 +41,11 @@ go.app = function() {
         var $ = self.$;
 
         self.init = function() {
-            self.user_profile = self.im.msg.helper_metadata.messenger || {};
-            if(self.user_profile.first_name) {
-                self.user_name = (
-                    self.user_profile.first_name +
-                    self.user_profile.last_name);
-            } else {
-                self.user_name = '';
-            }
+            // Currently just assume English.
+            self.im.user.set_lang('en');
+
+            // See if there's a user profile
+            self.user_profile = go.utils.get_user_profile(self.im.msg);
         };
 
         self.states.add('states_start', function(name) {
@@ -57,7 +55,9 @@ go.app = function() {
         self.states.add('question_1_friendliness', function(name) {
             return new MessengerChoiceState(name, {
                 question: $('Welcome{{user_name}}. When you signed up, were staff at the facility friendly & helpful?').context({
-                    'user_name': (self.user_name === '' ? '' : ' ' + self.user_name)
+                    'user_name': (_.isUndefined(self.user_profile.first_name)
+                                  ? ''
+                                  : ' ' + self.user_profile.first_name)
                 }),
 
                 choices: [
@@ -142,7 +142,9 @@ go.app = function() {
         self.states.add('end_thanks', function(name) {
             return new EndState(name, {
                 text: $('Thank you{{user_name}}! Rating our service helps us improve it.').context({
-                    'user_name': (self.user_name === '' ? '' : ' ' + self.user_name)
+                    'user_name': (_.isUndefined(self.user_profile.first_name)
+                                  ? ''
+                                  : ' ' + self.user_profile.first_name)
                 }),
                 next: 'states_start'
             });
