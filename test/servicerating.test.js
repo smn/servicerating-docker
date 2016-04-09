@@ -46,7 +46,10 @@ describe("app", function() {
                             'generic');
                         // Test that the translation is working
                         assert.equal(
-                            reply.helper_metadata.messenger.text,
+                            reply.helper_metadata.messenger.title,
+                            'MomConnect')
+                        assert.equal(
+                            reply.helper_metadata.messenger.subtitle,
                             'Welcome Name. When you signed up, were staff at the facility friendly & helpful?'
                         );
                     })

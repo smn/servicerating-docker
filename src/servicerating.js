@@ -18,8 +18,9 @@ go.app = function() {
                 return {
                     messenger: {
                         template_type: 'generic',
-                        text: i18n(opts.question),
-                        imge_url: opts.image_url || '',
+                        title: i18n(opts.title),
+                        subtitle: i18n(opts.question),
+                        image_url: opts.image_url || '',
                         buttons: opts.choices.map(function(choice, index) {
                             return {
                                 title: i18n(choice.label),
@@ -53,6 +54,7 @@ go.app = function() {
 
         self.states.add('question_1_friendliness', function(name) {
             return new MessengerChoiceState(name, {
+                title: 'MomConnect',
                 image_url: 'https://www.evernote.com/l/ATmWQI24r-RLoYnAL1eOgbMUFWyFqcPJVpsB/image.jpg',
                 question: $('Welcome{{user_name}}. When you signed up, were staff at the facility friendly & helpful?').context({
                     'user_name': (_.isUndefined(self.user_profile.first_name)
@@ -73,6 +75,7 @@ go.app = function() {
 
         self.states.add('question_2_waiting_times_feel', function(name) {
             return new MessengerChoiceState(name, {
+                title: 'MomConnect',
                 question: $('How do you feel about the time you had to wait at the facility?'),
 
                 choices: [
@@ -88,6 +91,7 @@ go.app = function() {
 
         self.states.add('question_3_waiting_times_length', function(name) {
             return new MessengerChoiceState(name, {
+                title: 'MomConnect',
                 question: $('How long did you wait to be helped at the clinic?'),
 
                 choices: [
@@ -103,6 +107,7 @@ go.app = function() {
 
         self.states.add('question_4_cleanliness', function(name) {
             return new MessengerChoiceState(name, {
+                title: 'MomConnect',
                 question: $('Was the facility clean?'),
 
                 choices: [
@@ -118,6 +123,7 @@ go.app = function() {
 
         self.states.add('question_5_privacy', function(name) {
             return new MessengerChoiceState(name, {
+                title: 'MomConnect',
                 question: $('Did you feel that your privacy was respected by the staff?'),
 
                 choices: [
