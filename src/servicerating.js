@@ -23,7 +23,7 @@ go.app = function() {
                             return {
                                 title: i18n(choice.label),
                                 payload: {
-                                    content: index + 1,
+                                    content: (index + 1) + '',
                                     in_reply_to: self.im.msg.message_id || null,
                                 }
                             };
