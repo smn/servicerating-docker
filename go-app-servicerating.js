@@ -28,11 +28,11 @@ go.app = function() {
                     messenger: {
                         template_type: 'button',
                         text: i18n(opts.question),
-                        buttons: opts.choices.map(function(choice) {
+                        buttons: opts.choices.map(function(choice, index) {
                             return {
                                 title: i18n(choice.label),
                                 payload: {
-                                    content: i18n(choice.value),
+                                    content: index + 1,
                                     in_reply_to: self.im.msg.message_id || null,
                                 }
                             };
