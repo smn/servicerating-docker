@@ -57,7 +57,7 @@ describe("app", function() {
                             '1. Very Satisfied',
                             '2. Satisfied',
                             '3. Not Satisfied',
-                            '4. Very unsatisfied'
+                            // '4. Very unsatisfied'
                         ].join('\n')
                     })
                     .run();
@@ -76,7 +76,7 @@ describe("app", function() {
                             '1. Very Satisfied',
                             '2. Satisfied',
                             '3. Not Satisfied',
-                            '4. Very unsatisfied'
+                            // '4. Very unsatisfied'
                         ].join('\n')
                     })
                     .run();
@@ -94,7 +94,7 @@ describe("app", function() {
                             '1. Less than an hour',
                             '2. Between 1 and 3 hours',
                             '3. More than 4 hours',
-                            '4. All day'
+                            // '4. All day'
                         ].join('\n')
                     })
                     .run();
@@ -112,7 +112,7 @@ describe("app", function() {
                             '1. Very Satisfied',
                             '2. Satisfied',
                             '3. Not Satisfied',
-                            '4. Very unsatisfied'
+                            // '4. Very unsatisfied'
                         ].join('\n')
                     })
                     .run();
@@ -130,7 +130,7 @@ describe("app", function() {
                             '1. Very Satisfied',
                             '2. Satisfied',
                             '3. Not Satisfied',
-                            '4. Very unsatisfied'
+                            // '4. Very unsatisfied'
                         ].join('\n')
                     })
                     .run();

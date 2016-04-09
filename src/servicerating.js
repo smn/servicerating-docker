@@ -62,7 +62,7 @@ go.app = function() {
                     new Choice('very-satisfied', $('Very Satisfied')),
                     new Choice('satisfied', $('Satisfied')),
                     new Choice('not-satisfied', $('Not Satisfied')),
-                    new Choice('very-unsatisfied', $('Very unsatisfied'))
+                    // new Choice('very-unsatisfied', $('Very unsatisfied'))
                 ],
 
                 next: 'question_2_waiting_times_feel'
@@ -77,7 +77,7 @@ go.app = function() {
                     new Choice('very-satisfied', $('Very Satisfied')),
                     new Choice('satisfied', $('Satisfied')),
                     new Choice('not-satisfied', $('Not Satisfied')),
-                    new Choice('very-unsatisfied', $('Very unsatisfied'))
+                    // new Choice('very-unsatisfied', $('Very unsatisfied'))
                 ],
 
                 next: 'question_3_waiting_times_length'
@@ -92,7 +92,7 @@ go.app = function() {
                     new Choice('less-than-an-hour', $('Less than an hour')),
                     new Choice('between-1-and-3-hours', $('Between 1 and 3 hours')),
                     new Choice('more-than-4-hours', $('More than 4 hours')),
-                    new Choice('all-day', $('All day'))
+                    // new Choice('all-day', $('All day'))
                 ],
 
                 next: 'question_4_cleanliness'
@@ -107,7 +107,7 @@ go.app = function() {
                     new Choice('very-satisfied', $('Very Satisfied')),
                     new Choice('satisfied', $('Satisfied')),
                     new Choice('not-satisfied', $('Not Satisfied')),
-                    new Choice('very-unsatisfied', $('Very unsatisfied'))
+                    // new Choice('very-unsatisfied', $('Very unsatisfied'))
                 ],
 
                 next: 'question_5_privacy'
@@ -122,7 +122,7 @@ go.app = function() {
                     new Choice('very-satisfied', $('Very Satisfied')),
                     new Choice('satisfied', $('Satisfied')),
                     new Choice('not-satisfied', $('Not Satisfied')),
-                    new Choice('very-unsatisfied', $('Very unsatisfied'))
+                    // new Choice('very-unsatisfied', $('Very unsatisfied'))
                 ],
 
                 next: 'log_servicerating'
