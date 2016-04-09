@@ -43,7 +43,7 @@ describe("app", function() {
                         assert.ok(reply.helper_metadata.messenger);
                         assert.equal(
                             reply.helper_metadata.messenger.template_type,
-                            'button');
+                            'generic');
                         // Test that the translation is working
                         assert.equal(
                             reply.helper_metadata.messenger.text,

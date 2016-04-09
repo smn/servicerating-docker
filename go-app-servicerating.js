@@ -26,8 +26,9 @@ go.app = function() {
                 var i18n = self.im.user.i18n;
                 return {
                     messenger: {
-                        template_type: 'button',
+                        template_type: 'generic',
                         text: i18n(opts.question),
+                        imge_url: opts.image_url || '',
                         buttons: opts.choices.map(function(choice, index) {
                             return {
                                 title: i18n(choice.label),
@@ -61,6 +62,7 @@ go.app = function() {
 
         self.states.add('question_1_friendliness', function(name) {
             return new MessengerChoiceState(name, {
+                image_url: 'https://www.evernote.com/l/ATmWQI24r-RLoYnAL1eOgbMUFWyFqcPJVpsB/image.jpg',
                 question: $('Welcome{{user_name}}. When you signed up, were staff at the facility friendly & helpful?').context({
                     'user_name': (_.isUndefined(self.user_profile.first_name)
                                   ? ''
