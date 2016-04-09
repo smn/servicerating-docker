@@ -57,9 +57,9 @@ describe("app", function() {
                         state: 'question_1_friendliness',
                         reply: [
                             'Welcome Name. When you signed up, were staff at the facility friendly & helpful?',
-                            '1. Very Satisfied',
-                            '2. Satisfied',
-                            '3. Not Satisfied',
+                            '1. 😍',
+                            '2. 👍',
+                            '3. 👎',
                             // '4. Very unsatisfied'
                         ].join('\n')
                     })

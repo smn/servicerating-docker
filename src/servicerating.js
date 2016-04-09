@@ -63,10 +63,9 @@ go.app = function() {
                 }),
 
                 choices: [
-                    new Choice('very-satisfied', $('Very Satisfied')),
-                    new Choice('satisfied', $('Satisfied')),
-                    new Choice('not-satisfied', $('Not Satisfied')),
-                    // new Choice('very-unsatisfied', $('Very unsatisfied'))
+                    new Choice('very-satisfied', '😍'),
+                    new Choice('satisfied', '👍'),
+                    new Choice('satisfied', '👎'),
                 ],
 
                 next: 'question_2_waiting_times_feel'
