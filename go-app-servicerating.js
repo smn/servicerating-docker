@@ -21,25 +21,26 @@ go.app = function() {
         ChoiceStates when using the Messenger transport
         */
 
-        opts = _.defaults(opts || {}, {});
-        opts.helper_metadata = function () {
-            var i18n = self.im.user.i18n;
-            return {
-                messenger: {
-                    template_type: 'button',
-                    text: i18n(opts.question),
-                    buttons: opts.choices.map(function(choice) {
-                        return {
-                            title: i18n(choice.label),
-                            payload: {
-                                content: i18n(choice.value),
-                                in_reply_to: self.im.msg.message_id || null,
-                            }
-                        };
-                    })
-                }
-            };
-        };
+        opts = _.defaults(opts || {}, {
+            helper_metadata: function () {
+                var i18n = self.im.user.i18n;
+                return {
+                    messenger: {
+                        template_type: 'button',
+                        text: i18n(opts.question),
+                        buttons: opts.choices.map(function(choice) {
+                            return {
+                                title: i18n(choice.label),
+                                payload: {
+                                    content: i18n(choice.value),
+                                    in_reply_to: self.im.msg.message_id || null,
+                                }
+                            };
+                        })
+                    }
+                };
+            }
+        });
 
         ChoiceState.call(self, name, opts);
 
