@@ -14,6 +14,11 @@ go.states = {
 
         opts = _.defaults(opts || {}, {
             helper_metadata: function () {
+                // disable for now
+                if(true) {
+                    return {};
+                }
+
                 var i18n = self.im.user.i18n;
                 return {
                     messenger: {

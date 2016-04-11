@@ -40,18 +40,18 @@ describe("app", function() {
                     .setup.user.addr('27001')
                     .inputs({session_event: 'new'})
                     .check.reply(function (reply) {
-                        assert.ok(reply.helper_metadata.messenger);
-                        assert.equal(
-                            reply.helper_metadata.messenger.template_type,
-                            'generic');
-                        // Test that the translation is working
-                        assert.equal(
-                            reply.helper_metadata.messenger.title,
-                            'MomConnect')
-                        assert.equal(
-                            reply.helper_metadata.messenger.subtitle,
-                            'Welcome Name. When you signed up, were staff at the facility friendly & helpful?'
-                        );
+                        // assert.ok(reply.helper_metadata.messenger);
+                        // assert.equal(
+                        //     reply.helper_metadata.messenger.template_type,
+                        //     'generic');
+                        // // Test that the translation is working
+                        // assert.equal(
+                        //     reply.helper_metadata.messenger.title,
+                        //     'MomConnect')
+                        // assert.equal(
+                        //     reply.helper_metadata.messenger.subtitle,
+                        //     'Welcome Name. When you signed up, were staff at the facility friendly & helpful?'
+                        // );
                     })
                     .check.interaction({
                         state: 'question_1_friendliness',
