@@ -1,21 +1,12 @@
 var go = {};
 go;
 
-go.utils = {
-    get_user_profile: function(msg) {
-        return msg.helper_metadata.messenger || {};
-    }
-};
+var vumigo = require('vumigo_v02');
+var ChoiceState = vumigo.states.ChoiceState;
+var _ = require('lodash');
 
-go.app = function() {
-    var vumigo = require('vumigo_v02');
-    var App = vumigo.App;
-    var Choice = vumigo.states.Choice;
-    var ChoiceState = vumigo.states.ChoiceState;
-    var EndState = vumigo.states.EndState;
-    var _ = require('lodash');
-
-    var MessengerChoiceState = ChoiceState.extend(function(self, name, opts) {
+go.states = {
+    MessengerChoiceState: ChoiceState.extend(function(self, name, opts) {
         /*
         Automatically add the necessary helper metadata for
         ChoiceStates when using the Messenger transport
@@ -46,7 +37,24 @@ go.app = function() {
 
         ChoiceState.call(self, name, opts);
 
-    });
+    }),
+
+    "trailing": "comma"
+};
+
+go.utils = {
+    get_user_profile: function(msg) {
+        return msg.helper_metadata.messenger || {};
+    }
+};
+
+go.app = function() {
+    var vumigo = require('vumigo_v02');
+    var App = vumigo.App;
+    var Choice = vumigo.states.Choice;
+    var MessengerChoiceState = go.states.MessengerChoiceState;
+    var EndState = vumigo.states.EndState;
+    var _ = require('lodash');
 
     var JsBoxApp = App.extend(function(self) {
         App.call(self, 'states_start');
